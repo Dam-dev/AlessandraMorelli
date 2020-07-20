@@ -1,0 +1,113 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 92vh;
+  width: 100%;
+  margin: auto;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  border-radius: 3px;
+  color: #333;
+  transition: transform 0.6s ease-in-out;
+}
+.content h1 {
+  margin-bottom: 10px;
+}
+.slide.current .content {
+  font-family: "poppins", sans-serif;
+  opacity: 0.7;
+  transform: translateX(610px);
+}
+.slide.current .content h1,
+p {
+  opacity: 1;
+}
+/* bg img*/
+/* .slide:first-child {
+  background: url(../assets/positività1920x1080.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  
+} */
+/* .slide:nth-child(2) {
+  background: url(../assets/el-corazon.png) no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.slide:nth-child(3) {
+  background: url(../assets/marina-greca1920x1080.png) no-repeat;
+  width: 100%;
+  height: 100%;
+} */
+.immagine {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+.buttons button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: hidden;
+  }
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+
+  .buttons {
+    display: none;
+  }
+}

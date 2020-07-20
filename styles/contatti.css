@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+.contact-container h2 {
+  margin-top: 20px;
+}
+
+.contact-container p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+.contact-container ul {
+  list-style: none;
+}
+
+.contact-container li {
+  text-emphasis: none;
+  color: black;
+}
+
+.icons {
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.icons a {
+  transition: color 0.5s linear;
+}
+
+.icons a:visited {
+  color: black;
+}
+
+.icons a:hover {
+  color: #489bf5;
+}
+
+footer {
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(240, 232, 232);
+  font-family: "poppins", sans-serif;
+  min-height: 100%;
+  overflow: auto;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.bio-container {
+  width: 95%;
+  margin-left: 15px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  height: 20%;
+}
+.bio-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bio-container p {
+  text-align: justify;
+}
+footer {
+  position: relative;
+}

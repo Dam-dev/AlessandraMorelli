@@ -1,0 +1,78 @@
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  height: 92vh;
+  gap: 2em;
+  margin: 20px 0;
+}
+
+.img-box {
+  width: 500px;
+  height: 600px;
+  /* margin: 2em; */
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+}
+.img-box .img {
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.corazon {
+  background-image: url("../assets/el-corazon.png");
+}
+
+.marina {
+  background-image: url("../assets/marina-greca.jpeg");
+}
+
+.ricordi {
+  background-image: url("../assets/Quadro\ 4\ ritagliato.jpg");
+  background-size: cover !important;
+}
+
+.positivita {
+  background-image: url("../assets/positività.jpeg");
+}
+
+.desc ul {
+  list-style: none;
+}
+
+.desc li {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.desc span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1600px) {
+  .img-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .img-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-box {
+    width: 300px;
+  }
+  .img-box .img {
+    height: 200px;
+    width: 300px;
+  }
+  .desc li {
+    margin-top: 0.4em;
+  }
+}

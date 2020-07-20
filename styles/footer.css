@@ -1,0 +1,12 @@
+footer {
+  background: white;
+  height: 100px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .footer-bottom {
+  position: absolute;
+  text-align: center;
+  height: 50px;
+}
