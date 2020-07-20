@@ -14,7 +14,7 @@
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .slide.current {
@@ -96,7 +96,7 @@ p {
 
 @media (max-width: 768px) {
   body {
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .slide .content {
     bottom: -300px;
