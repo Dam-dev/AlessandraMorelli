@@ -29,7 +29,7 @@ body {
 .logo a {
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: bold;
   text-decoration: none;
   flex: 1;
@@ -86,9 +86,9 @@ body {
     overflow-x: hidden;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0px;
-    height: 92vh;
+    height: 100vh;
     top: 8vh;
     width: 100%;
     background-color: var(--primaryColor);
